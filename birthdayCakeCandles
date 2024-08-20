@@ -1,0 +1,14 @@
+function birthdayCakeCandles(candles) {
+    let maior = 0;
+    for (let i = 0; i < candles.length; i++) { 
+        if (maior < candles[i]) {
+            maior = candles[i];
+        }
+    }
+    let qtdMaior = 0;
+    for (let i = 0; i < candles.length; i++) { 
+        if (candles[i] === maior) {
+            qtdMaior++;
+        }
+    } return qtdMaior;
+}
